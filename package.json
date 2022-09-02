@@ -1,0 +1,31 @@
+{
+  "name": "toolbox",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish",
+    "prepare": "husky install",
+    "test": ""
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.24.4",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "latest",
+    "turbo": "latest",
+    "husky": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.9.5"
+}
