@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-type useLocalStorageProps<T> = {
+type UseLocalStorageProps<T> = {
   key: string;
   defaultValue: T;
 };
@@ -8,7 +8,7 @@ type useLocalStorageProps<T> = {
 export const useLocalStorage = <T extends string>({
   key,
   defaultValue,
-}: useLocalStorageProps<T>) => {
+}: UseLocalStorageProps<T>) => {
   const [storedValue, setStoredValue] = useState<T>(() => {
     try {
       const item = localStorage.getItem(key);

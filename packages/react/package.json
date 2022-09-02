@@ -13,6 +13,9 @@
     "build": "tsup src/index.tsx --format=esm,cjs --dts"
   },
   "devDependencies": {
+    "@types/gapi": "^0.0.42",
+    "@types/google.accounts": "^0.0.2",
+    "@types/google.picker": "^0.0.39",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "eslint": "^7.32.0",

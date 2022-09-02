@@ -35,6 +35,9 @@ importers:
 
   packages/react:
     specifiers:
+      '@types/gapi': ^0.0.42
+      '@types/google.accounts': ^0.0.2
+      '@types/google.picker': ^0.0.39
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       eslint: ^7.32.0
@@ -44,6 +47,9 @@ importers:
       tsup: ^6.2.3
       typescript: ^4.5.2
     devDependencies:
+      '@types/gapi': 0.0.42
+      '@types/google.accounts': 0.0.2
+      '@types/google.picker': 0.0.39
       '@types/react': 18.0.18
       '@types/react-dom': 18.0.6
       eslint: 7.32.0
@@ -379,6 +385,18 @@ packages:
   /@rushstack/eslint-patch/1.1.4:
     resolution: {integrity: sha512-LwzQKA4vzIct1zNZzBmRKI9QuNpLgTQMEjsQLf3BXuGYb3QPTP4Yjf6mkdX+X1mYttZ808QpOwAzZjv28kq7DA==}
     dev: false
+
+  /@types/gapi/0.0.42:
+    resolution: {integrity: sha512-kskWpouTGqutaIVRo/swiGnMVoRxOYdRwvaDrh0yavfR9vQoHvJJ7Enp4KE9MEGS8qF7F5KiP6bRNOYcCgRXCA==}
+    dev: true
+
+  /@types/google.accounts/0.0.2:
+    resolution: {integrity: sha512-wmnbDIiGZNr3dJ+NCGiWme78rhsf5gn1YJM6uRjf3FCb8lrRptybQeAnHQ+GDfKSo+z2hRxhS32VRDXJEAvCmg==}
+    dev: true
+
+  /@types/google.picker/0.0.39:
+    resolution: {integrity: sha512-VnyuwmxPkipUPlTA6PmUeeIne7pSYSlq1xqoiyBCSTs47efEMhIlYaYHrzqW0DIvRa8HnkCDI40ltFzgke846Q==}
+    dev: true
 
   /@types/is-ci/3.0.0:
     resolution: {integrity: sha512-Q0Op0hdWbYd1iahB+IFNQcWXFq4O0Q5MwQP7uN0souuQ4rPg1vEYcnIOfr1gY+M+6rc8FGoRaBO1mOOvL29sEQ==}
