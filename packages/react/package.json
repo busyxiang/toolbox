@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "lint": "eslint *.ts*",
-    "build": "tsup src/index.tsx"
+    "build": "tsup src/index.tsx --format=esm,cjs --dts"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

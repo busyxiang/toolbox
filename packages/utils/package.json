@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "lint": "eslint *.ts*",
-    "build": "tsup src/index.ts"
+    "build": "tsup src/index.ts --format=esm,cjs --dts"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
