@@ -10,3 +10,4 @@ export { useNetworkStatus } from "./useNetworkStatus";
 export { useIntersectionObserver } from "./useIntersectionObserver";
 export { useLazyFetch } from "./useLazyFetch";
 export { useStateHistory } from "./useStateHistory";
+export { useTabVisible } from "./useTabVisible";
