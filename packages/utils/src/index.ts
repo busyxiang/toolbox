@@ -9,3 +9,4 @@ export {
   preferDarkTheme,
   getSelectedText,
 } from './dom';
+export { findDateMinMax } from './date';

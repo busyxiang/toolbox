@@ -43,8 +43,8 @@ jobs:
         uses: changesets/action@v1
         with:
           version: pnpm version-packages
-          commit: "chore: update versions"
-          title: "chore: update versions"
+          commit: 'chore: update versions'
+          title: 'chore: update versions'
           publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -53,6 +53,6 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         uses: Ilshidur/action-discord@master
         with:
-          args: "A new version of `${{join(steps.changesets.outputs.publishedPackages.*.name, ', ')}}` was published!"
+          args: 'A new version of `${{steps.changesets.outputs.publishedPackages}}` was published!'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
